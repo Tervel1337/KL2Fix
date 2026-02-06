@@ -4,7 +4,8 @@ This is a small project aimed at fixing some of the issues with Kane & Lynch 2 o
 
 ### Fixes:
 - **Fixed noise effect:** Contrary to what you might have thought, the noise effect wasn't gone from the PC version. Both the exposure shader and the noise shader had to be corrected based on math from the Xbox 360 version of the game that was done on the CPU. Additionally, the 2 values used to sample from the noise UV weren't accounting for the framerate which made the noise not look as strong at a higher framerate which has been fixed.
-- **Removed second window:** The game explicitly checks if you have a second monitor and creates a window on it which is what caused users' second monitors to go black. This has been removed and put behind a config toggle. 
+- **Removed second window:** The game explicitly checks if you have a second monitor and creates a window on it which is what caused users' second monitors to go black. This has been removed and put behind a config toggle.
+- **Corrected death screen:** The PC port has a small oversight causing the death screen to not have a black background in singleplayer of if you are the co-op host. This has been correct to match console. 
 
 ### Miscellaneous:
 - **Skip intros**: Forces the splash sequence to reach its end immediately which is the safest way to skip the intros without breaking UI and it is optional and off by default.

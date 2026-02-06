@@ -135,7 +135,8 @@
       <AdditionalDependencies>dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>move /Y "$(TargetPath)" "$(TargetDir)$(TargetName).asi"</Command>
+      <Command>move /Y "$(TargetPath)" "$(TargetDir)$(TargetName).asi"
+copy /Y "$(ProjectDir)KL2Fix\Archive\KL2FixPatch01.zip" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -173,11 +174,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>move /Y "$(TargetPath)" "$(TargetDir)$(TargetName).asi"</Command>
+      <Command>move /Y "$(TargetPath)" "$(TargetDir)$(TargetName).asi"
+copy /Y "$(ProjectDir)KL2Fix\Archive\KL2FixPatch01.zip" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="KL2Fix\DllMain.cpp" />
+    <ClCompile Include="KL2Fix\FileLoader.cpp" />
     <ClCompile Include="KL2Fix\GPU.cpp" />
     <ClCompile Include="KL2Fix\Misc.cpp" />
     <ClCompile Include="KL2Fix\Patches.cpp" />
@@ -185,6 +188,7 @@
     <ClCompile Include="KL2Fix\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="KL2Fix\FileLoader.h" />
     <ClInclude Include="KL2Fix\GPU.h" />
     <ClInclude Include="KL2Fix\Misc.h" />
     <ClInclude Include="KL2Fix\Patches.h" />

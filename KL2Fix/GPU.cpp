@@ -2,7 +2,7 @@
 #include "Timing.h"
 #include "Shaders.h"
 
-int SetPSConstFAddr = 0x006985E0_g;
+const int SetPSConstFAddr = 0x006985E0_g;
 void SetPixelShaderConstantF(int Reg, float* Data, int N) {
     ((int(__cdecl*)(int, float*, int))SetPSConstFAddr)(Reg, Data, N);
 }

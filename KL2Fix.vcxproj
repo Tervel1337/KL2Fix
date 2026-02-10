@@ -181,6 +181,7 @@ copy /Y "$(ProjectDir)KL2Fix\Archive\KL2FixPatch01.zip" "$(TargetDir)"</Command>
   <ItemGroup>
     <ClCompile Include="KL2Fix\DllMain.cpp" />
     <ClCompile Include="KL2Fix\FileLoader.cpp" />
+    <ClCompile Include="KL2Fix\Gameplay.cpp" />
     <ClCompile Include="KL2Fix\GPU.cpp" />
     <ClCompile Include="KL2Fix\Misc.cpp" />
     <ClCompile Include="KL2Fix\Patches.cpp" />
@@ -189,6 +190,7 @@ copy /Y "$(ProjectDir)KL2Fix\Archive\KL2FixPatch01.zip" "$(TargetDir)"</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KL2Fix\FileLoader.h" />
+    <ClInclude Include="KL2Fix\Gameplay.h" />
     <ClInclude Include="KL2Fix\GPU.h" />
     <ClInclude Include="KL2Fix\Misc.h" />
     <ClInclude Include="KL2Fix\Patches.h" />

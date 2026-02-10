@@ -36,6 +36,9 @@
     <ClCompile Include="KL2Fix\FileLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="KL2Fix\Gameplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\MemoryMgr.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="KL2Fix\FileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KL2Fix\Gameplay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

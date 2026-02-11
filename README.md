@@ -13,7 +13,6 @@ This is a small project aimed at fixing some of the issues with Kane & Lynch 2 o
 ### Miscellaneous:
 - **Skip intros**: Forces the splash sequence to reach its end immediately which is the safest way to skip the intros without breaking UI and it is optional and off by default.
 - **Debug/Cheat menu**: Replaces the main menu with the debug menu, has features such as level loading. Do not hit the back button in the debug menu as that will cause the game to get stuck and you'll have to force quit it. The setting takes priority over the option to skip intros.
-- **Loading screen FPS uncap**: This is off by default but it might speed up the game's loading if you enable it. Normally, the game is capped at exactly 20 FPS during loading screens. As a side note, and something that I hope I can figure out in the future, using VSync or ANY external FPS cap will make the game load at approximately 1% every 20-30 seconds, which is dreadfully slow. Until then, I would highly recommend playing uncapped or only capping after loading into the game.
 - **Multi-instance:** By default, you can only run one instance of the game. With MultiInstance being enabled you can run as many as you'd like. This is really only useful for testing but I figured I would include it anyway.
 
 ### QoL:

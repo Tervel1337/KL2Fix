@@ -9,6 +9,16 @@ inline uintptr_t operator""_g(unsigned long long val)
     return DynBaseAddress(static_cast<uintptr_t>(val));
 }
 
+
+template <typename Byte>
+static void PatchRepeat(uintptr_t address, Byte value, std::size_t count)
+{
+    for (std::size_t i = 0; i < count; ++i)
+    {
+        Patch<Byte>(address + i, value);
+    }
+}
+
 class Utils {
 public:
     static void ReplaceShader(int Address, unsigned char(&Dest)[], int Size) {
